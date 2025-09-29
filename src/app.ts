@@ -24,7 +24,7 @@ app.use('/users', usersRouter)
 
 // catch 404 and forward to error handler
 app.use(async (req: Request, res: Response, next: NextFunction) => {
-    next(createError(404))
+    throw createError(404)
 })
 
 // error handler
